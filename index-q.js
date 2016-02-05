@@ -1637,7 +1637,7 @@ App.IndexView = Backbone.View.extend({
 
 App.AboutView = Backbone.View.extend({
     el: "#appviewcontent",
-
+/********************************************************JENNA LOOK HERE*********************************************/
     template: _.template(''+
         '<section class="middle-panel clearfix">'+
   '<div class="container">'+
@@ -1648,18 +1648,35 @@ App.AboutView = Backbone.View.extend({
       '</p>'+
     
     '<div class="team-box">'+
-        '<header class="blue">Development Team</header>' +
+        '<header class="blue">Team</header>' +
             '<div class="section-content section-expandable row text-white">' +
         '<div class="col-xs-12 col-md-4 col-lg-4 featured-user">' +
             '<div class="content-frame green-bckg">' +
                 '<div class="framed-content large-border">' +
-                    '<div class="featured-user-icon" style="background-image: url(\'/static/omfiles/images/Roberto-Square2.jpg\');">' +
+                    '<div class="featured-user-icon" style="background-image: url(\'/static/omfiles/images/William-square2.jpg\');">' +
                     '</div>' +
                     '<div class="featured-user-name text-pc-blue text-center">' +
-                        '<h3>Roberto Cuba Rocha</h3>' +
+                        '<h3>William McCluskey</h3>' +
                         '</div>' +
                         '<div class="featured-user-quote vertical-align-wrapper">' +
-                            '<span class="vertical-middle">Roberto understands learning curves. Roberto has seen difficulties in employee training and knowledge transfer hold back great ideas at both large and small companies. Roberto received his BS in Computer Science from George Washington University.</span>' +
+                            '<span class="vertical-middle">Will understands how bureaucracy can hold people back. Will\'s effort to improve his environment and community has left him swimming in bureaucracy time and time again. This motivated him to find a way to make all processes simpler and more transparent. Will has a B.S. in Civil Engineering from Florida State University and Florida A&M University and an MBA from Boston College.</span>' +
+                        '</div>' +
+                        '<div class="featured-user-button vertical-align-wrapper text-center">' +
+                            '<h3><a class="pc-btn blue filled">CEO</a></h3>' +
+                        '</div>' +
+                    '</div>' +
+                '</div>' +
+            '</div>' +
+            '<div class="col-xs-12 col-md-4 col-lg-4 featured-user xs-margin-top sm-margin-top">' +
+                '<div class="content-frame green-bckg">' +
+                    '<div class="framed-content large-border">' +
+                        '<div class="featured-user-icon" style="background-image: url(\'/static/omfiles/images/Roberto-Square2.jpg\');">' +
+                        '</div>' +
+                        '<div class="featured-user-name text-pc-blue text-center">' +
+                            '<h3>Roberto Cuba Rocha</h3>' +
+                        '</div>' +
+                        '<div class="featured-user-quote vertical-align-wrapper">' +
+                            '<span class="vertical-middle">Roberto understands learning curves. Roberto\'s has seen difficulties in employee training and knowledge transfer hold back great ideas at both large and small companies. Roberto recieved his BS in computer science from George Washington University.</span>' +
                         '</div>' +
                         '<div class="featured-user-button vertical-align-wrapper text-center">' +
                             '<h3><a class="pc-btn blue filled">Lead Developer</a></h3>' +
@@ -1670,7 +1687,7 @@ App.AboutView = Backbone.View.extend({
             '<div class="col-xs-12 col-md-4 col-lg-4 featured-user xs-margin-top sm-margin-top">' +
                 '<div class="content-frame green-bckg">' +
                     '<div class="framed-content large-border">' +
-                        '<div class="featured-user-icon" style="background-image: url(\'/static/omfiles/images/domi.png\');">' +
+                        '<div class="featured-user-icon" style="background-image: url(\'/static/omfiles/images/Carolyn-square2.jpg\');">' +
                         '</div>' +
                         '<div class="featured-user-name text-pc-blue text-center">' +
                             '<h3>Carolyn Reoyo</h3>' +
@@ -1684,183 +1701,87 @@ App.AboutView = Backbone.View.extend({
                     '</div>' +
                 '</div>' +
             '</div>' +
-            '<div class="col-xs-12 col-md-4 col-lg-4 featured-user xs-margin-top sm-margin-top">' +
+        '</div>' +
+    '</div>'+
+    '<div class="team-box">'+
+        '<header class="blue">Development Interns</header>' +
+    '<div class="section-content section-expandable row text-white">' +
+            '<div class="col-xs-12 col-md-4 col-lg-4 featured-user">' +
                 '<div class="content-frame green-bckg">' +
                     '<div class="framed-content large-border">' +
-                        '<div class="featured-user-icon" style="background-image: url(\'/static/omfiles/images/career-source.jpg\');">' +
+                        '<div class="featured-user-icon" style="background-image: url(\'/static/omfiles/images/Celine-Square.jpg\');">' +
                         '</div>' +
                         '<div class="featured-user-name text-pc-blue text-center">' +
-                            '<h3>Career Source</h3>' +
-                        '</div>' +
-                        '<div class="featured-user-quote vertical-align-wrapper">' +
-                            '<span class="vertical-middle">Proper Channel allows senior management to put new processes in place for prototyping and testing.</span>' +
-                        '</div>' +
-                        '<div class="featured-user-button vertical-align-wrapper text-center">' +
-                            '<h3><a target="_blank" href="http://blog.properchannel.co/2015/11/e-month-featured-user-jim-mcshane-ceo-of-career-source/" class="pc-btn blue filled">Read More</a></h3>' +
+                            '<h3>Celina Nagales</h3>' +
+                            '</div>' +
+                            '<div class="featured-user-quote vertical-align-wrapper">' +
+                                '<span class="vertical-middle">Proper Channel is going to cut the frustration from scrolling down search engines and never finding the entire solution. As a previous marketing intern for Proper Channel, Celina saw firsthand the help that it provided to nonprofit organizations.  Celina is a computational science major at FSU looking to work in Computational Forensics.</span>' +
+                            '</div>' +
+                            '<div class="featured-user-button vertical-align-wrapper text-center">' +
+                                '<h3><a class="pc-btn blue filled">Intern</a></h3>' +
+                            '</div>' +
                         '</div>' +
                     '</div>' +
                 '</div>' +
-            '</div>' +
-            '<div class="section-footer row">' +
                 '<div class="col-xs-12 col-md-4 col-lg-4 featured-user xs-margin-top sm-margin-top">' +
                     '<div class="content-frame green-bckg">' +
                         '<div class="framed-content large-border">' +
-                            '<div class="featured-user-icon" style="background-image: url(\'/static/omfiles/images/career-source.jpg\');">' +
+                            '<div class="featured-user-icon" style="background-image: url(\'/static/omfiles/images/Jenna-Square2.jpg\');">' +
                             '</div>' +
                             '<div class="featured-user-name text-pc-blue text-center">' +
-                                '<h3>Career Source</h3>' +
+                                '<h3>Jenna Fishman</h3>' +
                             '</div>' +
                             '<div class="featured-user-quote vertical-align-wrapper">' +
-                                '<span class="vertical-middle">Proper Channel allows senior management to put new processes in place for prototyping and testing.</span>' +
+                                '<span class="vertical-middle">Jenna sees Proper Channel as a method of connecting people and their ideas in a collaborative way while allowing freedom of networking and creating without the fears of restraint. As a student who believes that connecting with others benefits a community, she understands that connecting thoughts and experiences with those of similar passion or interest leads to positive innovation. Jenna is a junior at Florida State University majoring in Information, Communication, and Technology.</span>' +
                             '</div>' +
                             '<div class="featured-user-button vertical-align-wrapper text-center">' +
-                                '<h3><a target="_blank" href="http://blog.properchannel.co/2015/11/e-month-featured-user-jim-mcshane-ceo-of-career-source/" class="pc-btn blue filled">Read More</a></h3>' +
+                                '<h3><a class="pc-btn blue filled">Intern</a></h3>' +
                             '</div>' +
                         '</div>' +
                     '</div>' +
                 '</div>' +
             '</div>' +
-        '</div>' +
-    '</div>'+
-      '<div class="row">'+
-        '<div class="col-md-2 col-sm-2">'+
-          '<div class="team-member-img"><img src="../static/omfiles/images/Carolyn-square2.jpg" alt=""></div>'+
         '</div>'+
-        '<div class="col-md-10 col-sm-10 detail-area">'+
-          '<h1>Carolyn Reoyo <span>Developer </span></h1>'+
-          '<p>Carolyn believes that visualized instructions can help bridge communication gaps.</p>'+
-          '<p>As a Pharmacy Technician at Walgreens, she understands that conveying information clearly is important.</p>'+
-          '<p>Carolyn is a senior at Florida State University, double-majoring in Religion and Information Technology</p>'+
-        '</div>'+
-      '</div>'+
-      '<div class="row">'+
-        '<div class="col-md-2 col-sm-2">'+
-          '<div class="team-member-img"><img src="../static/omfiles/images/Tyler-Zdenek.jpg" alt=""></div>'+
-        '</div>'+
-        '<div class="col-md-10 col-sm-10 detail-area">'+
-          '<h1>Tyler Zdenek <span>Communications Lead </span></h1>'+
-          '<p>Tyler knows it\'s all about clear communication.</p>'+
-          '<p>Tyler is compelled to improve documentation.  His focus is on useability, understandability, and most of all, functionality. He has a talent for seeing where problems are before they arise, and wants nothing more than to make sure that the end experience for the user is a joyous one.</p>'+
-          '<p>Tyler has a BA from Western Washington University where he majored in Creative Writing and minored in Technical Writing</p>'+
-        '</div>'+
-      '</div>'+
-      '<div class="row">'+
-        '<div class="col-md-2 col-sm-2">'+
-          '<div class="team-member-img"><img src="../static/omfiles/images/Daniel-Kramer.jpg" alt=""></div>'+
-        '</div>'+
-        '<div class="col-md-10 col-sm-10 detail-area">'+
-          '<h1>Daniel Kramer <span>Strategic Intern </span></h1>'+
-          '<p>Danny recognizes the value in sharing information that is clear and to the point.</p>'+
-          '<p>As an undergraduate teaching assistant and researcher, he strives to make the transfer of ideas as fluid and direct as possible.</p>'+
-          '<p>Danny is a junior at Harvard University, studying Chemical and Physical Biology.</p>'+
-        '</div>'+
-      '</div>'+
     '</div>'+
     '<div class="team-box">'+
-        '<header class="blue">Growth Team</header>' +
-        '<div class="row">'+
-        '<div class="col-md-2 col-sm-2">'+
-          '<div class="team-member-img"><img src="../static/omfiles/images/Roberto-Square2.jpg" alt=""></div>'+
-        '</div>'+
-        '<div class="col-md-10 col-sm-10 detail-area">'+
-          '<h1>Roberto Cuba Rocha <span>Lead Developer</span></h1>'+
-          '<p>Roberto understands learning curves.</p>'+
-          '<p>Roberto has seen difficulties in employee training and knowledge transfer hold back great ideas at both large and small companies.</p>'+
-          '<p>Roberto received his BS in Computer Science from George Washington University.</p>'+
-        '</div>'+
-      '</div>'+
-      '<div class="row">'+
-        '<div class="col-md-2 col-sm-2">'+
-          '<div class="team-member-img"><img src="../static/omfiles/images/Carolyn-square2.jpg" alt=""></div>'+
-        '</div>'+
-        '<div class="col-md-10 col-sm-10 detail-area">'+
-          '<h1>Carolyn Reoyo <span>Developer </span></h1>'+
-          '<p>Carolyn believes that visualized instructions can help bridge communication gaps.</p>'+
-          '<p>As a Pharmacy Technician at Walgreens, she understands that conveying information clearly is important.</p>'+
-          '<p>Carolyn is a senior at Florida State University, double-majoring in Religion and Information Technology</p>'+
-        '</div>'+
-      '</div>'+
-      '<div class="row">'+
-        '<div class="col-md-2 col-sm-2">'+
-          '<div class="team-member-img"><img src="../static/omfiles/images/Tyler-Zdenek.jpg" alt=""></div>'+
-        '</div>'+
-        '<div class="col-md-10 col-sm-10 detail-area">'+
-          '<h1>Tyler Zdenek <span>Communications Lead </span></h1>'+
-          '<p>Tyler knows it\'s all about clear communication.</p>'+
-          '<p>Tyler is compelled to improve documentation.  His focus is on useability, understandability, and most of all, functionality. He has a talent for seeing where problems are before they arise, and wants nothing more than to make sure that the end experience for the user is a joyous one.</p>'+
-          '<p>Tyler has a BA from Western Washington University where he majored in Creative Writing and minored in Technical Writing</p>'+
-        '</div>'+
-      '</div>'+
-      '<div class="row">'+
-        '<div class="col-md-2 col-sm-2">'+
-          '<div class="team-member-img"><img src="../static/omfiles/images/Daniel-Kramer.jpg" alt=""></div>'+
-        '</div>'+
-        '<div class="col-md-10 col-sm-10 detail-area">'+
-          '<h1>Daniel Kramer <span>Strategic Intern </span></h1>'+
-          '<p>Danny recognizes the value in sharing information that is clear and to the point.</p>'+
-          '<p>As an undergraduate teaching assistant and researcher, he strives to make the transfer of ideas as fluid and direct as possible.</p>'+
-          '<p>Danny is a junior at Harvard University, studying Chemical and Physical Biology.</p>'+
-        '</div>'+
-      '</div>'+
-    '</div>'+
+        '<header class="blue">Growth Interns</header>' +
     '<div class="section-content section-expandable row text-white">' +
-        '<div class="col-xs-12 col-md-4 col-lg-4 featured-user">' +
-            '<div class="content-frame green-bckg">' +
-                '<div class="framed-content large-border">' +
-                    '<div class="featured-user-icon" style="background-image: url(\'/static/omfiles/images/kids.jpg\');">' +
-                    '</div>' +
-                    '<div class="featured-user-name text-pc-blue text-center">' +
-                        '<h3>Kids Inc.</h3>' +
-                        '</div>' +
-                        '<div class="featured-user-quote vertical-align-wrapper">' +
-                            '<span class="vertical-middle">If the ways in which the community can contribute are surrounded by ambiguity or bureaucratic hurdles the kids and organization suffer.</span>' +
-                        '</div>' +
-                        '<div class="featured-user-button vertical-align-wrapper text-center">' +
-                            '<h3><a target="_blank" href="http://blog.properchannel.co/2015/02/kids-inc-uses-proper-channel-to-hack-beuracracy/" class="pc-btn blue filled">Read More</a></h3>' +
-                        '</div>' +
-                    '</div>' +
-                '</div>' +
-            '</div>' +
-            '<div class="col-xs-12 col-md-4 col-lg-4 featured-user xs-margin-top sm-margin-top">' +
+            '<div class="col-xs-12 col-md-4 col-lg-4 featured-user">' +
                 '<div class="content-frame green-bckg">' +
                     '<div class="framed-content large-border">' +
-                        '<div class="featured-user-icon" style="background-image: url(\'/static/omfiles/images/domi.png\');">' +
+                        '<div class="featured-user-icon" style="background-image: url(\'/static/omfiles/images/Maggie-Square.jpg\');">' +
                         '</div>' +
                         '<div class="featured-user-name text-pc-blue text-center">' +
-                            '<h3>Domi Station</h3>' +
+                            '<h3>Maggie Seketa</h3>' +
+                            '</div>' +
+                            '<div class="featured-user-quote vertical-align-wrapper">' +
+                                '<span class="vertical-middle">Maggie believes in giving people the tools to solve problems and make decisions. As a graduate assistant working with student interns, she understands the importance of encouraging creativity and not limiting growth and motivation. Maggie has a B.A. in Studio Art and is continuing her masters at Florida State University in Integrated Marketing Communication. </span>' +
+                            '</div>' +
+                            '<div class="featured-user-button vertical-align-wrapper text-center">' +
+                                '<h3><a target="_blank" class="pc-btn blue filled">Marketing Intern</a></h3>' +
+                            '</div>' +
                         '</div>' +
-                        '<div class="featured-user-quote vertical-align-wrapper">' +
-                            '<span class="vertical-middle">The Community Manager at Domi has been using Proper Channel to help communicate information to over 100 different community members.</span>' +
-                        '</div>' +
-                        '<div class="featured-user-button vertical-align-wrapper text-center">' +
-                            '<h3><a target="_blank" href="http://blog.properchannel.co/2015/02/domi-station/" class="pc-btn blue filled">Read More</a></h3>' +
+                    '</div>' +
+                '</div>' +
+                '<div class="col-xs-12 col-md-4 col-lg-4 featured-user xs-margin-top sm-margin-top">' +
+                    '<div class="content-frame green-bckg">' +
+                        '<div class="framed-content large-border">' +
+                            '<div class="featured-user-icon" style="background-image: url(\'/static/omfiles/images/Jamal-Square.jpg\');">' +
+                            '</div>' +
+                            '<div class="featured-user-name text-pc-blue text-center">' +
+                                '<h3>Jamal Ali-Mohammed</h3>' +
+                            '</div>' +
+                            '<div class="featured-user-quote vertical-align-wrapper">' +
+                                '<span class="vertical-middle">Jamal believes there is always a better way to share information. He sees the need for simpler ways to represent ideas and information. Excessive, complex documentation only gets in the way of getting work done. Jamal is a junior at Florida State University, pursuing a B.A. in Editing, Writing and Media</span>' +
+                            '</div>' +
+                            '<div class="featured-user-button vertical-align-wrapper text-center">' +
+                                '<h3><a class="pc-btn blue filled">PR Intern</a></h3>' +
+                            '</div>' +
                         '</div>' +
                     '</div>' +
                 '</div>' +
             '</div>' +
-            '<div class="col-xs-12 col-md-4 col-lg-4 featured-user xs-margin-top sm-margin-top">' +
-                '<div class="content-frame green-bckg">' +
-                    '<div class="framed-content large-border">' +
-                        '<div class="featured-user-icon" style="background-image: url(\'/static/omfiles/images/career-source.jpg\');">' +
-                        '</div>' +
-                        '<div class="featured-user-name text-pc-blue text-center">' +
-                            '<h3>Career Source</h3>' +
-                        '</div>' +
-                        '<div class="featured-user-quote vertical-align-wrapper">' +
-                            '<span class="vertical-middle">Proper Channel allows senior management to put new processes in place for prototyping and testing.</span>' +
-                        '</div>' +
-                        '<div class="featured-user-button vertical-align-wrapper text-center">' +
-                            '<h3><a target="_blank" href="http://blog.properchannel.co/2015/11/e-month-featured-user-jim-mcshane-ceo-of-career-source/" class="pc-btn blue filled">Read More</a></h3>' +
-                        '</div>' +
-                    '</div>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-        '<div class="section-footer row">' +
-            '<div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4">' +
-                '<h3><a target="_blank" href="http://blog.properchannel.co/category/featured-user/" alt="More Featured Users" class="pc-btn green expand text-center filled">VIEW ALL</a></h3>' +
-            '</div>' +
-        '</div>' +
+        '</div>'+
     '</div>'+
     '<header class="blue">Contact</header>' +
     '<p><a href="mailto:help@properchannel.co">help@properchannel.co</a>, <a href="mailto:info@properchannel.co">info@properchannel.co</a></p>'+
